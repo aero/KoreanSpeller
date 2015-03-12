@@ -12,7 +12,7 @@ class KoreanSpeller:
         params = urllib.urlencode({'text1': self.text})
 
         try:
-            f = urllib.urlopen('http://speller.cs.pusan.ac.kr/PnuSpellerISAPI_201107/lib/PnuSpellerISAPI_201107.dll?Check', params)
+            f = urllib.urlopen('http://164.125.36.75/PnuSpellerISAPI_201107/lib/PnuSpellerISAPI_201107.dll?Check', params)
             content = f.read()
         except IOError as (errno, strerror):
             print "I/O error({0}): {1}".format(errno, strerror)
